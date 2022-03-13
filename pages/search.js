@@ -5,6 +5,7 @@ import { Flex, Box, Text, Icon } from '@chakra-ui/react';
 import { BsFilter } from 'react-icons/bs';
 import Property from '../components/Property';
 import noresult from '../assets/noresult.png';
+import { fetchApi, baseUrl } from '../utils/fetchApi';
 
 import SearchFilters from '../components/SearchFilters';
 
@@ -48,7 +49,7 @@ const Search = ({ properties }) => {
 
 export default Search;
 
-export async function getStaticProps({ query }) {
+export async function getServerSideProps({ query }) {
   
     const purpose = query.purpose || 'for-rent';
     const rentFrequency = query.rentFrequency || 'yearly';
