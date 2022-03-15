@@ -9,7 +9,7 @@ const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, i
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
     <Image src={imageUrl} width={500} height={300} alt="banner" />
     <Box p="5">
-      <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
+      <Text color="gray.500" fontSize="md" fontWeight="medium">{purpose}</Text>
       <Text fontSize="3xl" fontWeight="bold">{title1} <br />{title2}</Text>
       <Text fontSize="lg" paddingTop="3" paddingBottom="3" color="gray.700">{desc1}</Text>
       <Button fontSize="xl">
@@ -25,9 +25,9 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
   return (
     <div>
       <Banner
-       purpose="RENT A HOME"
-       title1="Rental Homes for" 
-       title2="Everyone"
+       purpose="RENT YOUR DREAM PLACE"
+       title1="Check our rental homes" 
+       title2="Here!"
        desc1="Explore Apartments, Villas, Homes"
        desc2="and more"
        buttonText="Explore Renting"
@@ -43,8 +43,8 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
        
       <Banner
        purpose="BUY A HOME"
-       title1="Find, Buy and Own your" 
-       title2="Home from dreams"
+       title1="And become an owner of" 
+       title2="Your dream home"
        desc1="Explore Apartments, Villas, Homes"
        desc2="and more"
        buttonText="Explore Renting"
